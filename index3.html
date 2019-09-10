@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" style = "width:1225px;  margin:auto; ">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .wrapper{
+        perspective: 1px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 100vh;
+      }
+      .parallax1{
+        min-height: 1000px;
+        background-image: url("http://csci571.com/hw/hw3/images/coffee2.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        transform:translateZ(-1px) scale(2);
+
+        position: relative;
+      }
+
+      .parallax2{
+        min-height: 450px;
+        background-image: url("http://csci571.com/hw/hw3/images/coffee1.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        transform:translateZ(-1px) scale(2.5);
+
+        position: relative;
+
+        top:-350px;
+      }
+
+
+      .tab{
+        background-color: white;
+        height : 50px;
+        width: 1225px;
+        top: 0px;
+        position: fixed;
+        transform: translate3d(0, 0, 0);
+        z-index: 1;
+
+      }
+
+      .tab button{
+        padding-top:10px;
+        padding-left:20px;
+        background-color: inherit;
+        float: right;
+        border: none;
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: lighter;
+        color: #808080;
+      }
+
+      .tab .lefttab {
+        padding-left: 0;
+        margin-left:150px;
+        background-color: inherit;
+        float: left;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        font-family:Times;
+        font-style: italic;
+      }
+
+      .tab button:hover{
+        background-color: #ddd;
+      }
+
+      /* Create three equal columns that floats next to each other */
+      .column {
+        position: relative;
+        top: -670px;
+        float: left;
+        padding: 0px;
+        width: 33.334%;
+        height: 100%;
+      }
+
+      #smallImg{
+        position: relative;
+        top: -800px;
+        left: 25%;
+        width: 600px;
+        height: 330px;
+        text-align:left;
+        background-color: white;
+        transform:scale(0.8);
+        color: #4b0082;
+      }
+
+      .line{
+        display: block;
+        height: 5px;
+        border: 0;
+        border-top: 5px solid #4b0082;
+        margin: 1em 0;
+        padding: 0;
+        width: 33%;
+        }
+
+      #womanImg{
+        content:url(http://csci571.com/hw/hw3/images/face.jpg);
+        margin-top:4%;
+        margin-left:4%;
+        padding-right:4%;
+        float:left;
+      }
+
+      .Contact{
+        height:500px;
+        color: #4b0082;
+      }
+
+      .smallBox {
+        width: 400px;
+        height: 25px;
+        margin-bottom: 5px;
+      }
+
+
+    </style>
+  </head>
+
+
+  <body style = "height: 100vh">
+    <div style = "height:42px">
+      <div class = "tab">
+        <button class = "lefttab" type="button" name="Migi Bell" style = "color: #4b0082">Migi Bell</button>
+        <button type="button" name="contact" style = "margin-right: 200px">CONTACT ME</button>
+        <button type="button" name="about">ABOUT ME</button>
+        <button type="button" name="portfolio">PORFOLIO</button>
+        <button type="button" name="home"  style = "font-weight:bold; color: #4b0082">HOME</button>
+      </div>
+    </div>
+
+      <div class = "wrapper">
+          <div class = "parallax1"></div>
+
+
+      <div style = "height:650px; perspective:2px; z-index : 1;font-family:sans-serif">
+        <div id = "smallImg">
+            <div id="womanImg">
+            </div>
+
+            <div style = "float :left; margin-top: 4%">
+              <p style = "font-size:24px; font-family:Times; font-style:italic; line-height:0.01em">Migi Bell</p>
+              <p style = "font-size:48px; font-family:sans-serif; font-weight: lighter;line-height:0.01em;">FOOD </p>
+              <p style = "font-size:60px; font-family:sans-serif; line-height:0.01em;">STYLIST. </p>
+              <div class = "line">  </div>
+              <p style = "font-size:28px; font-family:sans-serif;font-weight: lighter;">PORTFOLIO > </p>
+            </div>
+      </div>
+
+        <div class = "column" style = "background-color: #87ceeb; ">
+          <div style = "margin-top:50%; margin-left: 10%">
+            <h2 style = "color:white; font-size: 18px;font-weight:lighter;">PROJECTS</h2>
+            <p style = "color:white; font-size: 28px">PROJECTS ></p>
+          </div>
+        </div>
+        <div class = "column" style = "background-color: #4b0082; ">
+          <div style = "margin-top:50%; margin-left: 10%">
+            <h2 style = "color:white; font-size: 18px; font-weight:lighter;">PROJECTS</h2>
+            <p style = "color:white; font-size: 28px">EDITORIAL ></p>
+          </div>
+        </div>
+        <div class = "column" style = "background-color: #dda0dd; ">
+          <div style = "margin-top:50%; margin-left: 10%">
+            <h2 style = "color:white; font-size: 18px; font-weight:lighter;">PROJECTS</h2>
+            <p style = "color:white; font-size: 28px">INNOVATIVE ></p>
+          </div>
+        </div>
+      </div>
+
+
+          <div class = "parallax2"></div>
+
+          <div style = "height:500px; background-color: #4b0082; font-size:40px; color:white; perspective: 2px;z-index:1; position:relative;top:-300px;">
+            <div style = "margin-left:150px; margin-right:150px; font-weight:lighter; font-family: Verdana;">
+              <div style = "font-size: 20px; padding-top:120px; padding-bottom: 60px">-Hello-</div>
+              <div >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+
+      <div class = "Contact" style = " background-color:white; position:relative; top:-450px; padding-bottom: 250px; font-family:Verdana">
+        <div style = "margin-left:150px; margin-right:150px; padding-top:300px; ">
+
+          <div style = "width = 40%; float:left">
+            <div style = "font-size:18px; font-weight:bold;">- Get In Touch -</div>
+            <br>
+            <div style = "font-size:36px">Contact Me</div>
+            <div style = "font-size:14px; line-height:2em">700 Morey Francois Street, San Francisco, CA 94148</div>
+            <div style = "font-size:14px; line-height:2em">info@lorem.com | Tel 123-555-1212</div>
+            <div style = "margin-top: 130px; font-family:arial"> &#9400 2023 by Migi Bell </div>
+          </div>
+
+          <form style = "float:left; margin-left:100px; margin-top: 50px;">
+            <input class = "smallBox" type="text" name="Name" value="   Name" style = "font-family:Verdana; color:#4b0082;  border-color:#4b0082; border-width:thin; "> <br>
+            <input class = "smallBox" type="text" name="Email" value="   Email" style = "font-family:Verdana; color:#4b0082;border-color:#4b0082; border-width:thin; "> <br>
+            <input class = "smallBox" type="text" name="Phone" value="   Phone" style = "font-family:Verdana; color:#4b0082;border-color:#4b0082; border-width:thin; "> <br>
+            <textarea cols = "63" rows = "8" style = "font-family:Verdana; color:#4b0082;font-size: 12px;border-color:#4b0082; border-width:thin; ">   Type your message here.</textarea > <br>
+            <input type="submit" value="Submit" style = "float:right; width:100px; height:30px;border:0px; background-color: #4b0082; color:white; font-family:Times; font-style:italic; font-size:18px;"> <br>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
